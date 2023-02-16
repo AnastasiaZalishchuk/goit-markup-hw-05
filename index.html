@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./scc/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -27,7 +27,9 @@
           >
           <ul class="header-list list header-container">
             <li class="header-item">
-              <a class="header-item-link link" href="./index.html">Studio</a>
+              <a class="header-item-link link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-item">
               <a class="header-item-link link" href="./portfolio.html"
@@ -66,7 +68,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-main-title">Effective Solutions for Your Business</h1>
-          <button class="hero-modal-btn" type="button">Order Service</button>
+          <button class="hero-modal-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -619,5 +623,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8px" height="8px" viewBox="0 0 8 8">
+            <!-- <use href="./img/icon/symbol-defs.svg"></use> -->
+            <use href="./img/icon/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- script-js -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
